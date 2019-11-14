@@ -1,0 +1,652 @@
+[
+    {
+        "id": "cae94f88.1df04",
+        "type": "tab",
+        "label": "Power",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6f4d2f31.30929",
+        "type": "tab",
+        "label": "Home Automation",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "8dbf3ab3.ada888",
+        "type": "ui_group",
+        "z": "",
+        "name": "Main",
+        "tab": "a651f66.f6fb008",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a651f66.f6fb008",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "home",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6326e475.ab2c2c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "f62cdaf7.9999a8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Room",
+        "icon": "tv",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a89573c8.9e42e",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Garden",
+        "icon": "local_florist",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "80aafa42.e7ec18",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "f62cdaf7.9999a8",
+        "order": 2,
+        "disp": true,
+        "width": 5
+    },
+    {
+        "id": "b1dd30b0.623dc",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "a89573c8.9e42e",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "8a88cecb.58877",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Power",
+        "icon": "power",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6a5f55d4.1f661c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Home Power Usage",
+        "tab": "8a88cecb.58877",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4796b14f.3b1d9",
+        "type": "ui_group",
+        "z": "",
+        "name": "Solar Power Generation",
+        "tab": "8a88cecb.58877",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c70ec881.e24ea8",
+        "type": "ui_colour_picker",
+        "z": "6f4d2f31.30929",
+        "name": "",
+        "label": "",
+        "group": "b1dd30b0.623dc",
+        "format": "hex",
+        "outformat": "string",
+        "showSwatch": true,
+        "showPicker": false,
+        "showValue": false,
+        "showHue": false,
+        "showAlpha": false,
+        "showLightness": true,
+        "square": "false",
+        "dynOutput": "false",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "a1c359f6.7d1808"
+            ]
+        ]
+    },
+    {
+        "id": "cc8c6bfc.2ae6c8",
+        "type": "ui_switch",
+        "z": "6f4d2f31.30929",
+        "name": "",
+        "label": "Main Switch",
+        "tooltip": "",
+        "group": "8dbf3ab3.ada888",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "dceffdef.cc9ee"
+            ]
+        ]
+    },
+    {
+        "id": "b7a65e0f.5a638",
+        "type": "ui_slider",
+        "z": "6f4d2f31.30929",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "80aafa42.e7ec18",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "bc3cc593.613e28"
+            ]
+        ]
+    },
+    {
+        "id": "bc3cc593.613e28",
+        "type": "ui_text",
+        "z": "6f4d2f31.30929",
+        "group": "80aafa42.e7ec18",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 290,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "a1c359f6.7d1808",
+        "type": "ui_gauge",
+        "z": "6f4d2f31.30929",
+        "name": "",
+        "group": "b1dd30b0.623dc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 300,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "428bc6df.41dd98",
+        "type": "ui_gauge",
+        "z": "cae94f88.1df04",
+        "name": "",
+        "group": "6a5f55d4.1f661c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Power Now",
+        "label": "units",
+        "format": "{{value}} W",
+        "min": 0,
+        "max": "5000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 150,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "6423e0c3.1907b",
+        "type": "ui_text",
+        "z": "cae94f88.1df04",
+        "group": "6a5f55d4.1f661c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Home Usage Today",
+        "format": "{{msg.payload}} kW",
+        "layout": "row-spread",
+        "x": 170,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "2603c4a.8db1f3c",
+        "type": "ui_chart",
+        "z": "cae94f88.1df04",
+        "name": "",
+        "group": "6a5f55d4.1f661c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "5 Minute Data",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 160,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4dcb9e57.c3185",
+        "type": "ui_chart",
+        "z": "cae94f88.1df04",
+        "name": "",
+        "group": "6a5f55d4.1f661c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Hourly Data",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 150,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "322938fb.d35108",
+        "type": "ui_text",
+        "z": "cae94f88.1df04",
+        "group": "4796b14f.3b1d9",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Power Generated Today",
+        "format": "{{msg.payload}} kW",
+        "layout": "row-spread",
+        "x": 550,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d8766e5.be77f9",
+        "type": "ui_gauge",
+        "z": "cae94f88.1df04",
+        "name": "",
+        "group": "4796b14f.3b1d9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Power now",
+        "label": "units",
+        "format": "{{value}} W",
+        "min": 0,
+        "max": "3500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 510,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "8ec49d63.46f4b",
+        "type": "ui_chart",
+        "z": "cae94f88.1df04",
+        "name": "",
+        "group": "4796b14f.3b1d9",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "5 Minute Data",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 520,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "573acba9.9ba884",
+        "type": "ui_chart",
+        "z": "cae94f88.1df04",
+        "name": "",
+        "group": "4796b14f.3b1d9",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Hourly Data",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 510,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef79066d.1eff88",
+        "type": "inject",
+        "z": "cae94f88.1df04",
+        "name": "",
+        "topic": "power",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 170,
+        "y": 40,
+        "wires": [
+            [
+                "646d9d83.3421f4"
+            ]
+        ]
+    },
+    {
+        "id": "3c9dcb0a.8017d4",
+        "type": "debug",
+        "z": "cae94f88.1df04",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 490,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "646d9d83.3421f4",
+        "type": "function",
+        "z": "cae94f88.1df04",
+        "name": "Random Number Generator",
+        "func": "rnd = Math.round(Math.random() * 5000);\n// node.error(rnd);\nmsg.payload = rnd;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 180,
+        "y": 160,
+        "wires": [
+            [
+                "428bc6df.41dd98",
+                "2603c4a.8db1f3c",
+                "3c9dcb0a.8017d4"
+            ]
+        ]
+    },
+    {
+        "id": "dceffdef.cc9ee",
+        "type": "ui_text",
+        "z": "6f4d2f31.30929",
+        "group": "8dbf3ab3.ada888",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Main Lamp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 320,
+        "y": 140,
+        "wires": []
+    }
+]
