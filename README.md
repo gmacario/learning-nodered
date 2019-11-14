@@ -14,6 +14,16 @@ Learning Node-RED
 
 ## Installation
 
+(If running on Windows) open a shell with Administrator rights and type the following commands:
+
+```bash
+npm install --global windows-build-tools
+```
+
+**NOTE**: The installation of `windows-build-tools` may take several minutes.
+
+Install npm package dependencies:
+
 ```bash
 npm install
 ```
