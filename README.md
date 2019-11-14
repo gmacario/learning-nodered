@@ -1,2 +1,2 @@
-# learn-nodered
+# learning-nodered
 Learning Node-RED
