@@ -6,6 +6,7 @@ Learning Node-RED
 
 * [Running Node-RED locally](https://nodered.org/docs/getting-started/local)
 * [Getting Started with Node-RED Dashboard](https://randomnerdtutorials.com/getting-started-with-node-red-dashboard/) - Random Nerd Tutorials
+* [Generating Random Numbers in Node-RED](https://developer.ibm.com/recipes/tutorials/generating-random-numbers-in-nodered/) - IBM developerWorks Recipes, 2017-01-05
 * [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard)
 
 ## Prerequisites
