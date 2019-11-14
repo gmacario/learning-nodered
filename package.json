@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gmacario/learning-nodered/issues"
   },
-  "homepage": "https://github.com/gmacario/learning-nodered#readme"
+  "homepage": "https://github.com/gmacario/learning-nodered#readme",
+  "dependencies": {
+    "node-red": "^1.0.2"
+  }
 }
