@@ -1,0 +1,682 @@
+[
+    {
+        "id": "68ba0c4b.8e5b04",
+        "type": "tab",
+        "label": "Power",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b66c3713.2b9708",
+        "type": "tab",
+        "label": "Home Automation",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "753144a.6bac1bc",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "6d49b54a.65798c",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "a0b41fd1.2bab2",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "e13a5e7f.f6da6",
+        "type": "ui_group",
+        "z": "",
+        "name": "Main",
+        "tab": "e6ae3d64.0a50f",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "e6ae3d64.0a50f",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "home",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a0b41fd1.2bab2",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Room",
+        "icon": "tv",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fe71a7e1.74baa8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Garden",
+        "icon": "local_florist",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "cdabc127.0f00d",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "a0b41fd1.2bab2",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "a0224128.505a3",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "fe71a7e1.74baa8",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "8cf0adc3.6545a",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Power",
+        "icon": "power",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c7b961d7.0f7d9",
+        "type": "ui_group",
+        "z": "",
+        "name": "Home Power Usage",
+        "tab": "8cf0adc3.6545a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "9a04e5a3.001358",
+        "type": "ui_group",
+        "z": "",
+        "name": "Solar Power Generation",
+        "tab": "8cf0adc3.6545a",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "6faa4264.c0278c",
+        "type": "ui_colour_picker",
+        "z": "b66c3713.2b9708",
+        "name": "",
+        "label": "",
+        "group": "a0224128.505a3",
+        "format": "hex",
+        "outformat": "string",
+        "showSwatch": true,
+        "showPicker": false,
+        "showValue": false,
+        "showHue": false,
+        "showAlpha": false,
+        "showLightness": true,
+        "square": "false",
+        "dynOutput": "false",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "319901e5.4537ee"
+            ]
+        ]
+    },
+    {
+        "id": "7506f301.db551c",
+        "type": "ui_switch",
+        "z": "b66c3713.2b9708",
+        "name": "",
+        "label": "Main Switch",
+        "tooltip": "",
+        "group": "e13a5e7f.f6da6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "4ac05d20.eccfb4"
+            ]
+        ]
+    },
+    {
+        "id": "8026ef35.947f4",
+        "type": "ui_slider",
+        "z": "b66c3713.2b9708",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "6d49b54a.65798c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "4384e76e.057ee8"
+            ]
+        ]
+    },
+    {
+        "id": "4384e76e.057ee8",
+        "type": "ui_text",
+        "z": "b66c3713.2b9708",
+        "group": "6d49b54a.65798c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 290,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "319901e5.4537ee",
+        "type": "ui_gauge",
+        "z": "b66c3713.2b9708",
+        "name": "",
+        "group": "a0224128.505a3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 300,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "152fb4cf.4fa6cb",
+        "type": "ui_gauge",
+        "z": "68ba0c4b.8e5b04",
+        "name": "",
+        "group": "c7b961d7.0f7d9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Power Now",
+        "label": "units",
+        "format": "{{value}} W",
+        "min": 0,
+        "max": "5000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 150,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "cf09cfd7.afc77",
+        "type": "ui_text",
+        "z": "68ba0c4b.8e5b04",
+        "group": "c7b961d7.0f7d9",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Home Usage Today",
+        "format": "{{msg.payload}} kW",
+        "layout": "row-spread",
+        "x": 170,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f2866251.4e627",
+        "type": "ui_chart",
+        "z": "68ba0c4b.8e5b04",
+        "name": "",
+        "group": "c7b961d7.0f7d9",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "5 Minute Data",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 160,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6b08fcad.a396a4",
+        "type": "ui_chart",
+        "z": "68ba0c4b.8e5b04",
+        "name": "",
+        "group": "c7b961d7.0f7d9",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Hourly Data",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 150,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a36a3e76.266e6",
+        "type": "ui_text",
+        "z": "68ba0c4b.8e5b04",
+        "group": "9a04e5a3.001358",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Power Generated Today",
+        "format": "{{msg.payload}} kW",
+        "layout": "row-spread",
+        "x": 550,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "a47e72d8.9529c",
+        "type": "ui_gauge",
+        "z": "68ba0c4b.8e5b04",
+        "name": "",
+        "group": "9a04e5a3.001358",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Power now",
+        "label": "units",
+        "format": "{{value}} W",
+        "min": 0,
+        "max": "3500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 510,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "52537aab.3c17c4",
+        "type": "ui_chart",
+        "z": "68ba0c4b.8e5b04",
+        "name": "",
+        "group": "9a04e5a3.001358",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "5 Minute Data",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 520,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2904e1bf.2a20ae",
+        "type": "ui_chart",
+        "z": "68ba0c4b.8e5b04",
+        "name": "",
+        "group": "9a04e5a3.001358",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Hourly Data",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 510,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "26b770bc.9af4a",
+        "type": "inject",
+        "z": "68ba0c4b.8e5b04",
+        "name": "",
+        "topic": "power",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 170,
+        "y": 40,
+        "wires": [
+            [
+                "f3f424ca.31b878"
+            ]
+        ]
+    },
+    {
+        "id": "b051c980.146d88",
+        "type": "debug",
+        "z": "68ba0c4b.8e5b04",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 520,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f3f424ca.31b878",
+        "type": "function",
+        "z": "68ba0c4b.8e5b04",
+        "name": "Random Number Generator",
+        "func": "rnd = Math.round(Math.random() * 5000);\n// node.error(rnd);\nmsg.payload = rnd;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 180,
+        "y": 160,
+        "wires": [
+            [
+                "152fb4cf.4fa6cb",
+                "f2866251.4e627",
+                "b051c980.146d88",
+                "ac07dbed.9f82a8"
+            ]
+        ]
+    },
+    {
+        "id": "4ac05d20.eccfb4",
+        "type": "ui_text",
+        "z": "b66c3713.2b9708",
+        "group": "e13a5e7f.f6da6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Main Lamp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 320,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ac07dbed.9f82a8",
+        "type": "ui_template",
+        "z": "68ba0c4b.8e5b04",
+        "group": "cdabc127.0f00d",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 500,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    }
+]
