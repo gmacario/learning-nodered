@@ -9,11 +9,13 @@ Learning Node-RED
 * [Generating Random Numbers in Node-RED](https://developer.ibm.com/recipes/tutorials/generating-random-numbers-in-nodered/) - IBM developerWorks Recipes, 2017-01-05
 * [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard)
 
-## Prerequisites
-
-* Node.js - tested with v8.12.0
-
 ## Running natively
+
+### Prerequisites
+
+* Node.js - tested with v8.12.0 running on MS Windows 7
+
+### Install dependencies
 
 (If running on Windows) open a shell with Administrator rights and type the following commands:
 
@@ -29,7 +31,7 @@ Install npm package dependencies:
 npm install
 ```
 
-### Test
+### Run Node-RED
 
 ```bash
 node node_modules/node-red/red.js
@@ -39,13 +41,17 @@ then browse <http://localhost:1880>
 
 ## Running inside Docker
 
-Build the Docker image
+### Prerequisites
+
+* Docker Engine - tested with Docker Engine - Community - v19.03.5 running on Ubuntu 18.04.3
+
+### Build the Docker image
 
 ```bash
 docker build -t learning-nodered .
 ```
 
-Run Node-RED inside a container
+### Run Node-RED inside a container
 
 ```bash
 docker run -d -p 1880:1880 learning-nodered
