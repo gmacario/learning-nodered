@@ -13,7 +13,7 @@ Learning Node-RED
 
 * Node.js - tested with v8.12.0
 
-## Installation
+## Running natively
 
 (If running on Windows) open a shell with Administrator rights and type the following commands:
 
@@ -29,13 +29,29 @@ Install npm package dependencies:
 npm install
 ```
 
-## Test
+### Test
 
 ```bash
 node node_modules/node-red/red.js
 ```
 
 then browse <http://localhost:1880>
+
+## Running inside Docker
+
+Build the Docker image
+
+```bash
+docker build -t learning-nodered .
+```
+
+Run Node-RED inside a container
+
+```bash
+docker run -d -p 1880:1880 learning-nodered
+```
+
+then browse <http://${docker_host}:1880>
 
 ## Copyright and License
 
