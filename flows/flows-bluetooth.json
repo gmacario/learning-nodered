@@ -1,0 +1,45 @@
+[
+    {
+        "id": "43005a95.4683b4",
+        "type": "tab",
+        "label": "Bluetooth",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e0978dd6.b3ca2",
+        "type": "bt serial in",
+        "z": "43005a95.4683b4",
+        "name": "",
+        "btSerial": "ae49df34.a6458",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "fdb11c8.158c6e"
+            ]
+        ]
+    },
+    {
+        "id": "fdb11c8.158c6e",
+        "type": "debug",
+        "z": "43005a95.4683b4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 390,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "ae49df34.a6458",
+        "type": "bt-serial-port",
+        "z": "",
+        "name": "Test BT device",
+        "btAddress": "00:11:22:33:44:55",
+        "serialReconnectTime": "30"
+    }
+]
