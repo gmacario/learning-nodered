@@ -1,0 +1,449 @@
+[
+    {
+        "id": "2cbd442d.2f7aac",
+        "type": "tab",
+        "label": "dashboard-demo",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1bf99e1d.c3fee2",
+        "type": "ui_text_input",
+        "z": "2cbd442d.2f7aac",
+        "name": "light",
+        "label": "light status",
+        "tooltip": "",
+        "group": "71a53ed7.3f797",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "",
+        "x": 330,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5e3788fa.6c1ee8",
+        "type": "ui_numeric",
+        "z": "2cbd442d.2f7aac",
+        "name": "",
+        "label": "numeric",
+        "tooltip": "",
+        "group": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "x": 80,
+        "y": 440,
+        "wires": [
+            [
+                "312db0f1.f219",
+                "a246db11.ca55b8"
+            ]
+        ]
+    },
+    {
+        "id": "312db0f1.f219",
+        "type": "ui_button",
+        "z": "2cbd442d.2f7aac",
+        "name": "",
+        "group": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "test",
+        "payloadType": "str",
+        "topic": "msg.payload",
+        "x": 110,
+        "y": 580,
+        "wires": [
+            [
+                "a246db11.ca55b8"
+            ]
+        ]
+    },
+    {
+        "id": "a246db11.ca55b8",
+        "type": "debug",
+        "z": "2cbd442d.2f7aac",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 330,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "a673cc47.a8637",
+        "type": "ui_slider",
+        "z": "2cbd442d.2f7aac",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "4ead01cc.96e31",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "bd03feff.5236"
+            ]
+        ]
+    },
+    {
+        "id": "601e0362.e7c06c",
+        "type": "ui_switch",
+        "z": "2cbd442d.2f7aac",
+        "name": "light switch",
+        "label": "switch",
+        "tooltip": "",
+        "group": "4ead01cc.96e31",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 130,
+        "y": 40,
+        "wires": [
+            [
+                "1bf99e1d.c3fee2"
+            ]
+        ]
+    },
+    {
+        "id": "bd03feff.5236",
+        "type": "ui_gauge",
+        "z": "2cbd442d.2f7aac",
+        "name": "",
+        "group": "71a53ed7.3f797",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 330,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "fb8efdc1.35ca1",
+        "type": "ui_switch",
+        "z": "2cbd442d.2f7aac",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "6b3a6917.cf3518",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 110,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "11a4a0bb.535f6f",
+        "type": "ui_switch",
+        "z": "2cbd442d.2f7aac",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "f585a9c8.1dd518",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 110,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ed29caa.e3938",
+        "type": "inject",
+        "z": "2cbd442d.2f7aac",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 660,
+        "wires": [
+            [
+                "2f00ab83.cdcf94"
+            ]
+        ]
+    },
+    {
+        "id": "567e777f.e125f8",
+        "type": "debug",
+        "z": "2cbd442d.2f7aac",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 350,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "2f00ab83.cdcf94",
+        "type": "function",
+        "z": "2cbd442d.2f7aac",
+        "name": "attach dayofweek (0-6)",
+        "func": "d = new Date();\nvar dayofweek = d.getDay();\nmsg.topic = \"testtopic\"\nmsg.payload = \"Hello-\" + msg.payload;\nmsg.dayofweek = dayofweek;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 150,
+        "y": 760,
+        "wires": [
+            [
+                "567e777f.e125f8",
+                "a7c73516.8ae8f8",
+                "7dedf77d.c387e8"
+            ]
+        ]
+    },
+    {
+        "id": "dda68cff.b710a",
+        "type": "debug",
+        "z": "2cbd442d.2f7aac",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 330,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "a7c73516.8ae8f8",
+        "type": "rbe",
+        "z": "2cbd442d.2f7aac",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "dayofweek",
+        "x": 120,
+        "y": 900,
+        "wires": [
+            [
+                "dda68cff.b710a"
+            ]
+        ]
+    },
+    {
+        "id": "a4e447e0.07b398",
+        "type": "switch",
+        "z": "2cbd442d.2f7aac",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 120,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7dedf77d.c387e8",
+        "type": "ui_text",
+        "z": "2cbd442d.2f7aac",
+        "group": "f585a9c8.1dd518",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 360,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "7d33d86f.ef9e58",
+        "type": "e-mail",
+        "z": "2cbd442d.2f7aac",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "",
+        "x": 330,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "71a53ed7.3f797",
+        "type": "ui_group",
+        "z": "",
+        "name": "Display",
+        "tab": "a7eb5128.19424",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4ead01cc.96e31",
+        "type": "ui_group",
+        "z": "",
+        "name": "Control",
+        "tab": "a7eb5128.19424",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "6b3a6917.cf3518",
+        "type": "ui_group",
+        "z": "",
+        "name": "Control",
+        "tab": "76b81bfe.b53524",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f585a9c8.1dd518",
+        "type": "ui_group",
+        "z": "",
+        "name": "Control",
+        "tab": "8726c19a.e18",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a7eb5128.19424",
+        "type": "ui_tab",
+        "z": "",
+        "name": "MyHome",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "76b81bfe.b53524",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Bedroom",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8726c19a.e18",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Lounge",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    }
+]
