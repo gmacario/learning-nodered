@@ -1,0 +1,14 @@
+# Project: learning-nodered
+#
+# File: docker-compose.yml
+
+version: '3'
+
+services:
+  nodered:
+    build: .
+    restart: always
+    ports:
+      - "1880:1880"
+
+# EOF
