@@ -1,0 +1,3 @@
+[submodule "external/node-red-contrib-btserial"]
+	path = external/node-red-contrib-btserial
+	url = https://gp.macario@bitbucket.arol.ibuildings.cloud/scm/adb/node-red-contrib-btserial.git
